@@ -28,6 +28,7 @@ class Solution:
  第二是独一无二，两个不同的数据，要拥有不相同的哈希。
  第三是长度固定，给定一种哈希算法，不管输入是多大的数据，输出长度都是固定的。
 '''
+#以下两种方法使用字典来求解
 #3.执行用时 :52 ms, 在所有 Python3 提交中击败了96.71%的用户; 内存消耗 :14.9 MB, 在所有 Python3 提交中击败了5.的用户
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
