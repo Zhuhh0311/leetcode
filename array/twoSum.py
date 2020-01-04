@@ -39,7 +39,7 @@ class Solution:
             if j is not None and j != i:
                 return [i, j] 
 				
-#执行用时 :84 ms, 在所有 Python3 提交中击败了51.53%的用户; 内存消耗 :14.3 MB, 在所有 Python3 提交中击败了34.12%的用户
+#4.执行用时 :84 ms, 在所有 Python3 提交中击败了51.53%的用户; 内存消耗 :14.3 MB, 在所有 Python3 提交中击败了34.12%的用户
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         hashmap = {}
