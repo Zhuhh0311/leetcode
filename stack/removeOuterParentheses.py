@@ -32,7 +32,7 @@ class Solution(object):
         return target
         
 #双指针法，p表示左括号的位置，q表示右括号的位置
-#但是没看懂代码
+#感觉看起来不如上一种方法好理解
 class Solution(object):
     def removeOuterParentheses(self, S):
         target = ''
@@ -46,3 +46,22 @@ class Solution(object):
                 continue
             q += 1
         return S
+
+
+#利用栈，左括号入栈，当栈的长度大于1，记录当前左括号，碰到右括号时，对应左括号出栈，若此时栈长度不为0，则应记录当前右括号。		
+class Solution:
+    def removeOuterParentheses(self, S: str) -> str:
+        #利用栈
+        result = ''
+        stack = []
+        for s in S:
+            if s == '(':
+                stack.append(s)
+                if len(stack) > 1:
+                    result += s
+            else:
+                stack.pop()
+                if len(stack) != 0:
+                    result += s
+        return result
+        
